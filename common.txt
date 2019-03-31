@@ -1,0 +1,95 @@
+
+一：jdk配置环境变量步骤：
+
+(1)新建->变量名"JAVA_HOME"，变量值"C:\Java\jdk1.8.0_05"（即JDK的安装路径） 
+
+(2)编辑->变量名"Path"，在原变量值的最后面加上“;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin” 
+
+(3)新建->变量名“CLASSPATH”,变量值“.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar”
+
+
+二：Tomcat环境变量配置：
+
+新建系统变量名CATALINA_BASE，值tomcat的安装路径 " E:\apache-tomcat-8.5.38 "
+
+新建系统变量CATALINA_HOME，值tomcat的安装路径 "E:\apache-tomcat-8.5.38"
+
+找到系统变量path，在值里面添加“%CATALINA_HOME%\lib;%CATALINA_HOME%\bin”，
+
+测试：cmd命令窗口 startup
+
+
+三 ：maven环境变量配置
+新建一个MAVEN_HOME，值是maven文件路径。
+
+Path中添加 %MAVEN_HOME%\bin;
+
+测试：  cmd命令窗口 mvn -v
+
+
+四：mysql环境变量配置与安装(解压版)
+(1)新建变量，变量名为：MYSQL_HOME
+  值为mysql解压版的目录
+
+(2)在path中最后一行添加  %MYSQL_HOME
+%/bin;
+
+(3)在mysql的根目录下新建my.ini文件，内容如下:({里面的内容})
+ {   
+      [mysqld]
+
+	port = 3306
+
+	basedir=D:/Program Files/mysql-5.7.23-winx64
+
+	datadir=D:/Program Files/mysql-5.7.23-winx64/data 
+
+	max_connections=200
+
+	character-set-server=utf8
+
+	default-storage-engine=INNODB
+
+	sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES
+
+      [mysql]
+
+      default-character-set=utf8
+} 
+
+(4)cmd命令行目录下到mysql的bin目录下依次执行以下命令:( E:\mysql5.7.25\bin>)
+        1:安装:
+             >>> mysqld -install
+		结果显示:service successfully installed
+
+	2:命令初始化
+	    >>> mysqld --initialize-insecure --user=mysql
+	     无报错显示,mysql根目录下就会生成data目录和root用户
+
+	3:执行net start mysql命令启动MySQL
+	    >>> net start mysql
+		正常显示:    
+			mysql服务正在启动
+			mysql服务启动成功	
+
+	4:以上无报错就启动成功，执行"mysqladmin -u root -p password 新密码"命令设置密码，root旧密码为空，直接回车就可以。
+	    >>>mysqladmin -u root -p password 123456
+            >>>Enter password: "直接enter"
+	5:启动mysql
+	    >>> mysql -u root -p 123456
+
+(5) idea激活码获取方式:
+	1、进入hosts文件中：C:\Windows\System32\drivers\etc\hosts 
+
+	2、将“0.0.0.0 account.jetbrains.com”添加到hosts文件中 
+
+        3. 访问 http://idea.lanyus.com/ 生成注册码,复制
+       
+        4.启动idea,粘贴激活码
+	    
+	
+             
+
+
+  
+  

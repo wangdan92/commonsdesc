@@ -1,0 +1,51 @@
+1:
+  	File>Project Structure   查看项目的配置(ctrl+Alt+shift+S)
+
+2:
+  	File>Settings    项目的设置(Ctrl+Alt+S)
+
+3: 设置主题
+	File | Settings | Appearance & Behavior | Appearance  设置主题
+
+4:鼠标滚动字体可变
+	File | Settings | Editor | General >>>   change fontsize with...  鼠标滚动
+
+5:自动导包设置
+	File | Settings | Editor | General | Auto Import   自动导包设置  all
+			Add unambiguous imports on the fly：自动导入不明确的结  勾选
+			Optimize imports on the fly：自动帮我们优化导入         勾选
+
+6:忽略大小写设置 
+	File | Settings | Editor | General | Code Completion  忽略大小写设置  (None)
+
+7:
+	File | Settings | Editor | General | Editor Tabs    
+				show tabs  in single row  不勾选
+
+8:控制台输出字体
+	File | Settings | Editor | Color Scheme | Console Font   控制台输出字体设置
+
+9:修改注释颜色
+	File | Settings | Editor | Color Scheme | Language Defaults    
+			>>>comments修改注释字体颜色
+			Doc Comment – Text：修改文档注释的字体颜
+			Block comment：修改多行注释的字体颜色
+			Line comment：修改当行注释的字体
+
+10:修改类头的文档注释信息
+	File | Settings | Editor | File and Code Templates
+			右边选项:include   >>File Header  >>
+
+11:设置项目文件编码
+	File | Settings | Editor | File Encodings  
+		都换成UTF-8
+*Transparent native-to-ascii conversion 主要用于转换 ascii，一般都要勾选，不然 Properties 文件中的注释显示的都不会是中文
+
+12:设置自动编译
+	File | Settings | Build, Execution, Deployment | Compiler
+			勾选 build  project automatically
+			勾选 Complie independent modules  in parallel
+
+
+
+
