@@ -1,0 +1,10 @@
+{
+    "code": 200,
+    "msg": "OK",
+    "count": null,
+    "data": {
+	   //请在提交表单时返回给服务端
+        "hashVal": "0ueTgAMYiADnUo3BVSDs5Q==",   
+        "tamp": 1554204184505
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "code": 200,
+    "msg": "课程展示",
+    "count": 2,
+    "data": {
+        "courseList": [
+            {
+                "courseId": 5,
+                "courseTitle": "第五课",
+                "openTime": "2019-04-02T07:49:21.000+0000",
+                "updateTime": null,
+                "courseStatus": "1",
+                "courseType": null,
+                "courseImg": null,
+                "videoUrl": null,
+                "description": "welcome to...",
+                "remark": null,
+                "courseFlag": null,
+                "courseContent": null
+            },
+            {
+                "courseId": 4,
+                "courseTitle": "第四课",
+                "openTime": "2019-04-02T02:48:25.000+0000",
+                "updateTime": null,
+                "courseStatus": "1",
+                "courseType": null,
+                "courseImg": "http://thirdwx.qlogo.cn/mmopen/uZqA9iaHrDuIyDOmCa45DR3Fq2OLibF6Aaosgfd8yHh8pdNJic2kglwmIOUl5yXoIEV5me2xib8MhIsTKoIwsMMx5I2emfBEPynr/132",
+                "videoUrl": null,
+                "description": "dfsdf465fs6撒旦阿萨德发热",
+                "remark": null,
+                "courseFlag": null,
+                "courseContent": null
+            }
+        ]
+    }
+}

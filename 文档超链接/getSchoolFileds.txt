@@ -1,0 +1,49 @@
+{
+    "code": 200,
+    "msg": "校区信息",
+    "count": 4,
+    "data": {
+        "schoolField": [
+            {
+                "schoolid": 1,
+                "schoolname": "杭州大厦501",
+                "schooladdr": "杭州大厦501",
+                "createtime": "2019-04-01T08:47:37.000+0000",
+                "updatetime": "2019-04-01T08:47:40.000+0000",
+                "status": 1,
+                "description": null,
+                "remark": null
+            },
+            {
+                "schoolid": 2,
+                "schoolname": "城西银泰校区",
+                "schooladdr": "城西银泰校区",
+                "createtime": "2019-04-01T08:48:21.000+0000",
+                "updatetime": "2019-04-01T08:48:24.000+0000",
+                "status": 1,
+                "description": null,
+                "remark": null
+            },
+            {
+                "schoolid": 3,
+                "schoolname": "远洋乐堤校区",
+                "schooladdr": "远洋乐堤校区",
+                "createtime": "2019-04-01T09:00:00.000+0000",
+                "updatetime": "2019-04-01T09:35:00.000+0000",
+                "status": 1,
+                "description": null,
+                "remark": null
+            },
+            {
+                "schoolid": 4,
+                "schoolname": "滨江龙湖天街",
+                "schooladdr": "滨江龙湖天街",
+                "createtime": "2019-04-01T08:01:00.000+0000",
+                "updatetime": "2019-04-01T09:00:00.000+0000",
+                "status": 1,
+                "description": null,
+                "remark": null
+            }
+        ]
+    }
+}
